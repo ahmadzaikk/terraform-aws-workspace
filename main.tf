@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_workspaces_workspace" "example" {
   bundle_id                    = var.bundle_id
   directory_id                 = var.directory_id
-  #user_name                    = var.user_name
+  user_name                    = var.user_name
   root_volume_encryption_enabled = var.root_volume_encryption_enabled
   user_volume_encryption_enabled = var.user_volume_encryption_enabled
   volume_encryption_key         = var.volume_encryption_key
